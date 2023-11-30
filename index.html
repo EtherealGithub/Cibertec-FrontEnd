@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Envoltorio de Diapositivas</title>
+  </head>
+  <body>
+    <header>
+        <div id="Banner">
+            <img class="LogoMarca" src="https://res.cloudinary.com/dzl4wricn/image/upload/v1701220923/Imagenes_Publicas/uetizn4etsdrpqkwzrtr.png" alt="Electric Image" >
+            <h2 class="logo">Irresistible Fragance</h2>
+        </div>
+
+        <ul class="navigation">
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Productos</a>
+                <ul class="dropdown">
+                    <li><a href="#">Perfumes</a></li>
+                    <li><a href="#">Cremas</a></li>
+                    <li><a href="#">Cosmeticos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Nosotros</a></li>
+        </ul>
+    </header>
+  
+    <div class="agrupacion-seleccion-lista-mosaico-productos">
+        <div>BOTON</div>
+
+        <div class="agrupacion-lista-mosaico-productos" >
+            
+            <div class="agrupacion-lista-productos">
+                <nav>
+                    <button style="--clr:#5ddcff"  class="button-seleccion" onclick="changeColor('--clr-caballeros')"><span>Caballeros</span><i></i></button>
+                    <button style="--clr:#FF44CC" class="button-seleccion" onclick="changeColor('--clr-damas')"><span>Damas</span><i></i></button>
+                    <button style="--clr:#39FF14" class="button-seleccion" onclick="changeColor('--clr-ninos')"><span>Niños</span><i></i></button>
+                </nav>
+            </div>
+    
+            <div class="agrupacion-mosaico-img-productos">
+    
+                <div class="imagenes-estaticas">
+                    <img src="https://res.cloudinary.com/dzl4wricn/image/upload/v1701347573/Imagenes_Publicas/z2pb4hlebbkjfuogmcmb.jpg" alt="">
+                    <img src="https://res.cloudinary.com/dzl4wricn/image/upload/v1701347572/Imagenes_Publicas/hthnkhrx57pp400tqhwo.jpg" alt="">
+                </div>
+            
+                <div id="slideshow-container">
+                
+                    <div class="slide">
+                        <img src="https://res.cloudinary.com/dzl4wricn/image/upload/v1701347572/Imagenes_Publicas/qzxwo0qgl8iyw6xvki25.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="slide">
+                        <img src="https://res.cloudinary.com/dzl4wricn/image/upload/v1701347572/Imagenes_Publicas/ph5zsuxgh6yzvbiqkw5n.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="slide">
+                        <img src="https://res.cloudinary.com/dzl4wricn/image/upload/v1701347572/Imagenes_Publicas/yrxscfu9sd6rvrrky8na.jpg" alt="Imagen 3">
+                    </div>
+                
+                    <div id="nav">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                
+                    <button id="prev" onclick="plusSlides(-1)">❮</button>
+                    <button id="next" onclick="plusSlides(1)">❯</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <button class="footer-button" id="btn_footer01">Encuentranos</button>
+        <button class="footer-button" id="btn_footer02">Consulta un asesor</button>
+      </footer>
+
+
+  
+  <script src="./js/script.js"></script>
+  
+  </body>
+</html>
